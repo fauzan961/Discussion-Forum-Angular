@@ -1,0 +1,7 @@
+<form [formGroup]="topicForm" (ngSubmit)="saveForm()">
+    <label class="form-label">Title</label> <br>
+    <input class="form-input" type="text" formControlName="title" /> <br>
+    <button type="submit" [disabled]=formDisabled()>
+        <span>Add Topic</span>
+    </button> <br>
+</form>

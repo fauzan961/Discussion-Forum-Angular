@@ -1,0 +1,18 @@
+<div *ngFor="let topic of topics" class="topic-item">
+    <div>
+        <h3 [routerLink]="topic.id">{{ topic.title }}</h3>
+
+    </div>
+    <fa-icon *ngIf="topic.created_by == currentUser" [icon]="faEdit" [routerLink]="[topic.id, 'edit']"
+        [queryParams]="{ title: topic.title }"></fa-icon>
+    <fa-icon *ngIf="topic.created_by == currentUser" [icon]="faTrash" [routerLink]="topic.id + '/delete'"
+        class="trash"></fa-icon>
+</div>
+
+<div *ngIf="!topics.length">
+    No Topics Added Currently !!
+</div>
+
+<div class="add-topic">
+    <fa-icon [icon]="faAdd" [routerLink]="'/add-topics'"></fa-icon>
+</div>

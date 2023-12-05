@@ -1,0 +1,4 @@
+<h3>Are you sure you want to delete the {{ topic?.title || "No Title" }} ?</h3>
+
+<button (click)="removeTopic('yes', topic.id)">Yes</button>
+<button (click)="removeTopic('no', topic.id)">No</button>

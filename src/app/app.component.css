@@ -1,0 +1,40 @@
+.app {
+    background-color: #282c34;
+    color: white;
+    min-height: calc(100vh - 100px);
+    padding: 50px;
+}
+
+h1 {
+    margin: 0 auto;
+    color: orange;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.film {
+    margin-right: 20px;
+}
+
+.logging-links {
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom-color 0.3s;
+    /* Add transition for a smooth color change */
+}
+
+.logging-links:hover {
+    color: #007bff;
+    /* Change text color on hover */
+    text-decoration: underline;
+    /* Add color to the underline on hover */
+}

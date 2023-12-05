@@ -1,0 +1,7 @@
+<form [formGroup]="editForm" (ngSubmit)="saveEditForm()">
+    <label class="edit-form-label">Title</label> <br>
+    <input class="edit-form-input" type="text" formControlName="title" /> <br>
+    <button type="submit" [disabled]=editFormDisabled()>
+        <span>Update Topic</span>
+    </button> <br>
+</form>

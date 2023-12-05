@@ -1,0 +1,7 @@
+<form [formGroup]="commentForm" (ngSubmit)="saveCommentForm()">
+    <label class="comment-form-label">Comment</label> <br>
+    <input class="comment-form-input" type="text" formControlName="message" /> <br>
+    <button type="submit" [disabled]=formDisabled()>
+        <span>Add Comment</span>
+    </button> <br>
+</form>

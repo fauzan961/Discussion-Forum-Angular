@@ -1,0 +1,33 @@
+.github-sign-in {
+    background-color: #24292e;
+    /* GitHub color */
+    color: #ffffff;
+    /* Text color */
+    border: 2px solid transparent;
+    /* Initial border style */
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    /* Add smooth transition for all properties */
+}
+
+.github-sign-in:hover {
+    background-color: #30363d;
+    /* Darken the background color on hover */
+    border-color: #4ca1af;
+    /* Glowing border color */
+    transform: scale(1.05);
+    /* Slightly increase the size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+}
+
+.github-sign-in fa-icon {
+    margin-right: 10px;
+}
